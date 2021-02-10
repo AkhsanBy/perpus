@@ -2,25 +2,25 @@
 @section('title', 'Home')
 @section('content')
   <div class="row">
-    <div class="col-md-3 col-sm-6 col-12">
+    <div class="col-md-4 col-sm-6 col-12">
       <div class="info-box">
-        <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
+        <span class="info-box-icon bg-info"><i class="fas fa-book"></i></span>
 
         <div class="info-box-content">
-          <span class="info-box-text">Messages</span>
-          <span class="info-box-number">1,410</span>
+          <span class="info-box-text">Books</span>
+          <span class="info-box-number">{{ $books }}</span>
         </div>
         <!-- /.info-box-content -->
       </div>
       <!-- /.info-box -->
     </div>
     <!-- /.col -->
-    <div class="col-md-3 col-sm-6 col-12">
+    <div class="col-md-4 col-sm-6 col-12">
       <div class="info-box">
-        <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
+        <span class="info-box-icon bg-success"><i class="fas fa-user"></i></span>
 
         <div class="info-box-content">
-          <span class="info-box-text">Bookmarks</span>
+          <span class="info-box-text">User</span>
           <span class="info-box-number">410</span>
         </div>
         <!-- /.info-box-content -->
@@ -28,26 +28,13 @@
       <!-- /.info-box -->
     </div>
     <!-- /.col -->
-    <div class="col-md-3 col-sm-6 col-12">
+    <div class="col-md-4 col-sm-6 col-12">
       <div class="info-box">
-        <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
+        <span class="info-box-icon bg-warning"><i class="fas fa-users"></i></span>
 
         <div class="info-box-content">
-          <span class="info-box-text">Uploads</span>
-          <span class="info-box-number">13,648</span>
-        </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
-    <div class="col-md-3 col-sm-6 col-12">
-      <div class="info-box">
-        <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-text">Likes</span>
-          <span class="info-box-number">93,139</span>
+          <span class="info-box-text">Members</span>
+          <span class="info-box-number">{{ $members }}</span>
         </div>
         <!-- /.info-box-content -->
       </div>
